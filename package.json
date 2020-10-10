@@ -1,0 +1,29 @@
+{
+  "name": "contact-form",
+  "version": "1.0.0",
+  "description": "Simple Contact Form",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "production": "npx forever -o start index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --inspect=0.0.0.0:9229 index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdvj/contact-form.git"
+  },
+  "author": "Fernando De Vega",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/fdvj/contact-form/issues"
+  },
+  "homepage": "https://github.com/fdvj/contact-form#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1",
+    "forever": "^3.0.2",
+    "google-spreadsheet": "^3.0.13",
+    "moment-timezone": "^0.5.31"
+  }
+}
