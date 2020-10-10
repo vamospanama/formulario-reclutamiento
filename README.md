@@ -35,6 +35,6 @@ Para correr localmente, una vez esten seteadas las variables de ambiente, puedes
 Para correr en producción, puedes usar el comando `npm run production`.
 
 ## Docker
-Para facilitar los deployment, hay una versión de Docker de esta aplicación en el repo [https://hub.docker.com/repository/docker/vamosporpanama/formulario-reclutamiento](vamosporpanama/formulario-reclutamiento:latest).
+Para facilitar los deployment, hay una versión de Docker de esta aplicación en el repo [vamosporpanama/formulario-reclutamiento:latest](https://hub.docker.com/repository/docker/vamosporpanama/formulario-reclutamiento).
 
 Este arranca en modo producción, siempre y cuando se pasen las variables antes mencionadas. Esta corre en el puerto 3001.
