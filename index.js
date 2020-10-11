@@ -41,12 +41,8 @@ let sheet;
   app.post('/subscribe', async (req, res) => {
     try {
       // Validate Captcha
-      const validation = await axios.post('https://www.google.com/recaptcha/api/siteverify', {
-        data: {
-          secret: process.env.RECAPTCHA_KEY,
-          response: req.body.recaptcha
-        }
-      });
+
+      const { data: validation } = await axios.post(`https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_KEY}&response=${req.body.recaptcha}`);
 
       if (!validation.success) {
         return res.status(400).send('Invalid Captcha token');
