@@ -21,6 +21,7 @@
   "homepage": "https://github.com/fdvj/contact-form#readme",
   "dependencies": {
     "axios": "^0.20.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "forever": "^3.0.2",
     "google-spreadsheet": "^3.0.13",
