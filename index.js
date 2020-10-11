@@ -1,5 +1,6 @@
 'use strict';
 const express = require('express');
+const cors = require('cors');
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const axios = require('axios');
 const moment = require('moment-timezone');
@@ -8,8 +9,7 @@ const credentials = require(process.env.CREDENTIALS || './credentials.json');
 
 const app = express();
 app.use(express.json());
-
-app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 
 const PORT = process.env.PORT || 3001;
